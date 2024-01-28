@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/images/android-chrome-192x192.png">
+    <title>My portfolio</title>
+</head>
+
+<body>
+    <header id="header">
+        <nav class="navbar">
+            <a href="index.html">Carl Fransson</a>
+            <button class="navbar-toggle" id="navbar-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <a href="#main" class="skip">Gå till huvudinnehåll</a>
+            <ul class="navbar-menu" id="navbar-menu">
+                <li><a href="index.html" class="current">Hem</a></li>
+                <li><a href="about.html">Om mig</a></li>
+                <li><a href="projects.html">Mina projekt</a></li>
+                <li><a href="contact.html">Kontakta mig</a></li>
+                <li><a href="cv.html">CV</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="webguidelines-page" id="main">
+        <section class="webguidelines-section">
+            <h1>Webbriktlinjer</h1>
+            <div class="webguidelines-text">
+                <h3>Ange i kod vad sidans olika delar har för roll
+                </h3>
+                <button class="drop-down-text-btn" onclick="showText(this)">Läs mer</button>
+                <p class="additional-text">De viktigaste delarna i hemsidan är taggarna &lt;header&gt;,&lt;body&gt;
+                    &lt;nav&gt;,&lt;main&gt;,&lt;aside&gt; och &lt;footer&gt;.
+                    Header och footer är lika för alla sidor. I main taggen visas allt innehåll för den specifika sidan.
+                    aside har jag för vissa sidor när jag vill tydliggöra att det innehållet ligger bredvid ett annat
+                    innehåll.
+                    alla dessa taggar ligger innanför body taggen.
+                </p>
+            </div>
+            <div class="webguidelines-text">
+                <h3>Ange sidans språk i koden</h3>
+                <button class="drop-down-text-btn" onclick="showText(this)">Läs mer</button>
+                <p class="additional-text">HTML-koden använder lang-attributet för att
+                    specificera att sidans språk är svenska:
+                    &lt;html lang="sv"&gt;
+                </p>
+            </div>
+            <div class="webguidelines-text">
+                <h3>Ange språkförändringar i koden
+                </h3>
+                <button class="drop-down-text-btn" onclick="showText(this)">Läs mer</button>
+                <p class="additional-text">Sidans språk är konstant och förändras inte dynamiskt</p>
+            </div>
+            <div class="webguidelines-text">
+                <h3>Använd inte enbart färg för att förmedla information</h3>
+                <button class="drop-down-text-btn" onclick="showText(this)">Läs mer</button>
+                <p class="additional-text">För att förmedla olika typer av information, som text, har jag använt
+                    sans-serif för att göra det
+                    lättare att läsa. Rubrikerna på hemsidan är i olika storleksformat för att tydligt indikera deras
+                    status som rubriker.
+                </p>
+            </div>
+            <div class="webguidelines-text">
+                <h3>Använd tillräcklig kontrast mellan text och bakgrund</h3>
+                <button class="drop-down-text-btn" onclick="showText(this)">Läs mer</button>
+                <p class="additional-text">Kontrasten mellan text och bakgrund på hemsidan är korrekt för att underlätta
+                    för personer med
+                    synnedsättning.</p>
+            </div>
+            <div class="webguidelines-text">
+                <h3>Använd tillräckliga kontraster i komponenter och grafik</h3>
+                <button class="drop-down-text-btn" onclick="showText(this)">Läs mer</button>
+                <p class="additional-text">Hemsidan är designad så kontraster i komponenterna och grafiken är
+                    tillräckliga för att förbättra
+                    läsbarheten och tillgängligheten. Med textkontraster, fokusmarkering och synliga ikoner mot
+                    bakgrunden säkerställer denna
+                    webbplats enklare att läsa och förstå för alla besökare.
+                </p>
+            </div>
+            <div class="webguidelines-text">
+                <h3>Erbjud alternativ till komplexa fingerrörelser</h3>
+                <button class="drop-down-text-btn" onclick="showText(this)">Läs mer</button>
+                <p class="additional-text">På hemsidan kan man enkelt interagera men antingen knapptryck eller
+                    musinteraktion.
+                    Med att använda tabb funktionen på tangentbordet kan man navigera på sidan utan konstigheter.
+                    Något som ej är möjligt med musinteraktion är att få upp ett skrivbord på skärmen för att kunna
+                    skriva,
+                    men utöver det så är det fullt möjligt att endast använda musinteraktion.
+                </p>
+            </div>
+            <div class="webguidelines-text">
+                <h3>Erbjud möjlighet att hoppa förbi återkommande innehåll</h3>
+                <button class="drop-down-text-btn" onclick="showText(this)">Läs mer</button>
+                <p class="additional-text">De innehåll som är återkommande, vilket är header och footer finns det
+                    möjlighet att skippa.
+                    När man tabbar på hemsidan kommer det upp en text som man kan klicka enter på, då kommer man
+                    direkt till "main" sektionen.
+                </p>
+            </div>
+            <div class="webguidelines-text">
+                <h3>Ge användaren möjlighet att pausa, stänga av eller sänka ljud</h3>
+                <button class="drop-down-text-btn" onclick="showText(this)">Läs mer</button>
+                <p class="additional-text">Hemsidan inkluderar inte ljud eller videofunktioner. Därför är denna
+                    riktlinjen inte tillämpad för
+                    denna hemsida.
+                </p>
+            </div>
+            <div class="webguidelines-text">
+                <h3>Ge användarna möjlighet att justera tidsbegränsningar</h3>
+                <button class="drop-down-text-btn" onclick="showText(this)">Läs mer</button>
+                <p class="additional-text">På hemsidan finns det inga funktioner som använder sig utav
+                    tidsbegränsningar.</p>
+            </div>
+            <div class="webguidelines-text">
+                <h3>Ge användarna möjlighet att pausa eller stänga av rörelser</h3>
+                <button class="drop-down-text-btn" onclick="showText(this)">Läs mer</button>
+                <p class="additional-text">På sidan finns det inga överdrivna rörelser som kan göra det svårt för
+                    personer med svårigheter
+                    att navigera eller läsa. Dock finns det små animationer för knappar som gör de mer märkbara med en
+                    liten animation. Dock går det ej att stänga av den funktionen på sidan.
+                </p>
+            </div>
+            <div class="webguidelines-text">
+                <h3>Ge förslag på hur fel kan rättas till</h3>
+                <button class="drop-down-text-btn" onclick="showText(this)">Läs mer</button>
+                <p class="additional-text">Det ända felet användaren kan göra på hemsidan är utefall användaren inte
+                    uppfyller
+                    kraven i kontakta mig
+                    formuläret.
+                    Om personen inte skriver någon text i raderna som kräver text så kommer det upp ett meddelande vart
+                    användaren
+                    måste fylla i text.
+                </p>
+            </div>
+            <div class="webguidelines-text">
+                <h3>Ge möjlighet att ångra, korrigera eller bekräfta vid viktiga transaktioner</h3>
+                <button class="drop-down-text-btn" onclick="showText(this)">Läs mer</button>
+                <p class="additional-text">På hemsidan finns det inga funktioner för transaktioner, därför är denna
+                    riktlinjen inte tillämpad
+                    för denna hemsida.
+                </p>
+            </div>
+            <div class="webguidelines-text">
+                <h3>Gör en logisk tab-ordning</h3>
+                <button class="drop-down-text-btn" onclick="showText(this)">Läs mer</button>
+                <p class="additional-text">Tab-ordningen för hemsidan är i ordning så att det börjar uppe i header sedan
+                    main sektionen tillslut
+                    footer sektionen.</p>
+            </div>
+            <div class="webguidelines-text">
+                <h3>Markera tydligt vilket fält eller element som är i fokus.</h3>
+                <button class="drop-down-text-btn" onclick="showText(this)">Läs mer</button>
+                <p class="additional-text">I headern är det ett understräck på den sidan man är på, så man ser klart och
+                    tydligt vilken sida som
+                    är på.
+                    Alla knappar ändra dessutom bakrgrundsfärg när man hovrar över dem.
+                    Det visar även en symbol för en hand som indetikerar att det är en knapp. Även i formuläret som
+                    finns på hemsidan när man tabbar på
+                    de olika textraderna ser man en border så man enkelt ser vilket fält man är på.
+                </p>
+            </div>
+            <div class="webguidelines-text">
+                <h3>Märk upp vanliga formulärfält i koden</h3>
+                <button class="drop-down-text-btn" onclick="showText(this)">Läs mer</button>
+                <p class="additional-text">Formulärfälten är korrekt upplaggda genom att använda semantiska taggar som
+                    <code>&lt;label&gt;</code>.
+                    Vilket gör formulären mer tillängliga för hjälpmedel samt bättre användarupplevelse
+                </p>
+            </div>
+            <div class="webguidelines-text">
+                <h3>Popup-funktioner ska kunna hanteras och stängas av alla</h3>
+                <button class="drop-down-text-btn" onclick="showText(this)">Läs mer</button>
+                <p class="additional-text">På hemsidan finns det inga popup-funktioner så denna punkt är inte tillämpad
+                    till hemsidan.</p>
+            </div>
+            <div class="webguidelines-text">
+                <h3>Presentera innehållet i en meningsfull ordning för alla</h3>
+                <button class="drop-down-text-btn" onclick="showText(this)">Läs mer</button>
+                <p class="additional-text">Innehållet på sidan är upplagt med huvudrubrik som är i en
+                    <code>&lt;h1&gt;</code> tagg.
+                    Underrubrikerna är med taggar som &lt;h2&gt; &lt;h3&gt; &lt;h4&gt; osv. Vilket skapar en tydlig
+                    hierarkisk struktur.
+                    De olika sektionerna på hemsidan är anordnade för att ge en klar förståelse för vad sidan handlar om
+                    och underlättar navigeringen för användarna.
+                </p>
+            </div>
+            <div class="webguidelines-text">
+                <h3>Se till att allt innehåll presenteras rätt oavsett skärmens riktning</h3>
+                <button class="drop-down-text-btn" onclick="showText(this)">Läs mer</button>
+                <p class="additional-text">Hemsidan är designad för olika typer av skärmar samt rikningen på skärmen.
+                    Man kan läsa och se allt
+                    innehåll
+                    på sidan oavsett vilken skärmupplösning eller riktning. Med olika media queries är den anpassad till
+                    alla olika storlekar.
+                </p>
+            </div>
+            <div class="webguidelines-text">
+                <h3>Se till att det går att öka avstånd mellan tecken, rader, stycken och ord</h3>
+                <button class="drop-down-text-btn" onclick="showText(this)">Läs mer</button>
+                <p class="additional-text">Det finns ingen funktion på hemsidan där man kan ändra det som användare. Men
+                    all text på sidan är
+                    lättläst
+                    med olika teckenhöjder och storlekar som gör det enklare för användaren att läsa texten.
+                </p>
+            </div>
+            <div class="webguidelines-text">
+                <h3>Se till att hjälpmedel kan presentera meddelanden som inte är i fokus</h3>
+                <button class="drop-down-text-btn" onclick="showText(this)">Läs mer</button>
+                <p class="additional-text">I mitt kontaktformulär har jag implementerat 'Placeholder' för varje
+                    inmatningsruta för att ge
+                    användaren tydlig vägledning om vilken typ av information som förväntas. Dessutom har jag använt
+                    semantisk HTML med korrekt användning av 'label'-elementen, vilket ytterligare förbättrar
+                    tillgängligheten för användare med hjälpmedel.
+                </p>
+            </div>
+            <div class="webguidelines-text">
+                <h3>Se till att koden validerar</h3>
+                <button class="drop-down-text-btn" onclick="showText(this)">Läs mer</button>
+                <p class="additional-text">Koden använder sig utav rätt dokumentation, elementen har även korrekta
+                    semantiska taggar. Det finns
+                    inga
+                    dupliceringar av id. Använde mig utav W3C för att kolla så att det inte var några fel i koden.
+                </p>
+            </div>
+            <div class="webguidelines-text">
+                <h3>Se till att markören inte fastnar vid tangentbordsnavigation</h3>
+                <button class="drop-down-text-btn" onclick="showText(this)">Läs mer</button>
+                <p class="additional-text">Markören fastnar ingenstans på någon av sidorna. När man kommer längst ner på
+                    sidan så kommer man
+                    tillbaka
+                    till toppen om man tabbar vidare.
+                </p>
+            </div>
+            <div class="webguidelines-text">
+                <h3> Se till att komponenter fungerar i hjälpmedel</h3>
+                <button class="drop-down-text-btn" onclick="showText(this)">Läs mer</button>
+                <p class="additional-text">För att få att komponenterna att fungera har koden rätt html semantik för att
+                    strukturera sidorna
+                    korrekt.
+                    Formulären som finns på sidan går dessutom att navigeras med tangentbordet där jag har använt mig
+                    utav rätt element
+                    så att det ska fungera korrekt. Länkar är dessutom med rätt a tagg för att kunna klicka på enter för
+                    att komma till andra sidor.
+                    Testat även med olika skärmläsartekniker för att säkerställa att sidan fungerar bra för personer med
+                    funktionsnedsättningar.
+                </p>
+            </div>
+            <div class="webguidelines-text">
+                <h3>Se till att text går att förstora utan problem</h3>
+                <button class="drop-down-text-btn" onclick="showText(this)">Läs mer</button>
+                <p class="additional-text">Det finns ingen funktion för att förstora texten på sidan. Men om man håller
+                    in crtl + scroll så kan
+                    man zooma
+                    in hela sidan. Då kan man lättare läsa texten och gör det enklare för dom med svårigheter.
+                </p>
+            </div>
+            <div class="webguidelines-text">
+                <h3>Se till att text på knappar och kontroller överensstämmer med maskinläsbara namn</h3>
+                <button class="drop-down-text-btn" onclick="showText(this)">Läs mer</button>
+                <p class="additional-text">Koden stämmer överrens med texten som knappen heter eller länken. Detta
+                    underlättar för personer som
+                    använder
+                    röststyrning eller för skärmläsare.
+                </p>
+            </div>
+            <div class="webguidelines-text">
+                <h3>Skapa en flexibel layout som fungerar vid förstoring eller liten skärm</h3>
+                <button class="drop-down-text-btn" onclick="showText(this)">Läs mer</button>
+                <p class="additional-text">Vid förstorning av hemsidan går det att förstora till en viss del. När det
+                    blir för stort kan vissa
+                    delar inte synas.
+                    Men hemsidan är anpassad för de vanligaste storlekar på skärm. </p>
+            </div>
+            <div class="webguidelines-text">
+                <h3>Skapa tydliga fältetiketter/ledtexter</h3>
+                <button class="drop-down-text-btn" onclick="showText(this)">Läs mer</button>
+                <p class="additional-text">För formuläret som finns på sidan är det tydligt vad som måste fyllas i eller
+                    inte. Om det står "*"
+                    före
+                    beskrivningen så måste det fyllas i. Om detta inte uppfylls så skickas inte meddelandet och det
+                    kommer upp
+                    ett fönster att den raden måste fyllas i för att meddelandet ska gå igenom.
+                </p>
+            </div>
+            <div class="webguidelines-text">
+                <h3>Ingen kontextförändring vid fokus</h3>
+                <button class="drop-down-text-btn" onclick="showText(this)">Läs mer</button>
+                <p class="additional-text">På hemsidan finns det inga kontextföränringar som kan uppstå när en komponent
+                    får fokus.</p>
+            </div>
+            <div class="webguidelines-text">
+                <h3>Ange syftet för formulärfält i koden</h3>
+                <button class="drop-down-text-btn" onclick="showText(this)">Läs mer</button>
+                <p class="additional-text">I formulären som finns det en så kallad "placeholder" där man då ser vad för
+                    typ av information som
+                    ska skrivas.
+                    Detta underlättar för personer som använder skärmläsare eller andra hjälpmedel.
+                </p>
+            </div>
+            <div class="webguidelines-text">
+                <h3>Utveckla systemet så att det går att hantera med enbart tangentbordet</h3>
+                <button class="drop-down-text-btn" onclick="showText(this)">Läs mer</button>
+                <p class="additional-text">Systemet är uppbyggt på att man ska endast kunna använda tangentbordet för
+                    personer med svårigheter.
+                    Även finns alternativet att skippa upprepande information som till exempel header och footer.
+                    När användaren kommer längst ner på sidan och vill komma till toppen igen är det bara att klicka
+                    tabb.
+                </p>
+            </div>
+            <div class="webguidelines-text">
+                <h3>Visa var ett fel uppstått och beskriv det tydligt</h3>
+                <button class="drop-down-text-btn" onclick="showText(this)">Läs mer</button>
+                <p class="additional-text">Det finns inget på sidan som kan bli fel för användaren. Endast när personen
+                    inte uppfyller alla krav
+                    för formulätet
+                    på hemsidan. Då kommer det upp en ruta där det står att användaren måste fylla i de rader som är
+                    krav.
+                </p>
+            </div>
+        </section>
+        <div class="move-to-top-container" id="top-button">
+            <a href="#top-section"><img src="/images/movetotop.png" alt="arrow image"></a>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container" id="footer-link">
+            <a href="#main" class="skip">Gå till huvudinnehåll</a>
+            <ul class="social-icon">
+                <li class="social-link"><a href="https://www.facebook.com/calle.franzzon"><img src="images/facebook.png"
+                            alt="Facebook icon"></a>
+                </li>
+                <li class="social-link"><a href="https://www.linkedin.com/in/carl-fransson-5b6769296/"><img
+                            src="images/linkedinLogo.png" alt="Twitter icon"></a></li>
+                <li class="social-link"><a href="https://www.instagram.com/calle_fransson/"><img
+                            src="images/instagram.png" alt="Instagram icon"></a>
+                </li>
+                <li class="social-link"><a href="mailto:calle-fransson@hotmail.com"><img src="images/mail.png"
+                            alt="Email icon"></a></li>
+                <li class="social-link"><a href="https://github.com/callefransson"><img src="images/github-logo.png"
+                            alt=" Github icon"></a>
+                </li>
+            </ul>
+            <ul class="footer-ul">
+                <li><a href="index.html">Hem</a></li>
+                <li><a href="about.html">Om mig</a></li>
+                <li><a href="projects.html">Mina projekt</a></li>
+                <li><a href="contact.html">Kontakta mig</a></li>
+                <li><a href="webguidelines.html" class="current">Webb riktlinjer</a></li>
+                <li><a href="cv.html">CV</a></li>
+            </ul>
+
+        </div>
+        <p>&copy;2024 Carl Fransson .NET23 | All Rights Reserved</p>
+    </footer>
+    <script src="/js/script.js"></script>
+</body>
+
+</html>

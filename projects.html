@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/images/android-chrome-192x192.png">
+    <title>My portfolio</title>
+</head>
+
+<body>
+    <header id="header">
+        <nav class="navbar">
+            <a href="index.html">Carl Fransson</a>
+            <button class="navbar-toggle" id="navbar-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <a href="#main" class="skip">Gå till huvudinnehåll</a>
+            <ul class="navbar-menu" id="navbar-menu">
+                <li><a href="index.html">Hem</a></li>
+                <li><a href="about.html">Om mig</a></li>
+                <li><a href="projects.html" class="current">Mina projekt</a></li>
+                <li><a href="contact.html">Kontakta mig</a></li>
+                <li><a href="cv.html">CV</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="project-page" id="main">
+        <section class="project-header-section">
+            <h1>Mina projekt från utbildningen</h1>
+        </section>
+        <section class="projects">
+            <div class="place-holder">
+                <div class="front-place-holder">
+                    <div class="image-container">
+                        <img src="images/labb4bildglitch.jpg" alt="code image">
+                    </div>
+                    <div class="text-and-button">
+                        <h3>Slutprojekt i databaser</h3>
+                        <button class="show-more" onclick="toggleFlip(this)">
+                            Läs mer
+                        </button>
+                    </div>
+
+                </div>
+                <div class="back-place-holder">
+                    <div class="text-description">
+                        <p class="text-about-project">
+                            Detta var slutprojektet i databas kursen där vi hade som uppgift att
+                            skapa en fiktiv skola och att skapa ett fungerande system med databaser.
+                            Uppgiten byggde vidare på labb 2 och labb 3 som vi hade i databas kursen.
+                        </p>
+                    </div>
+                    <div class="button-container-project">
+                        <button class="go-back" onclick="toggleFlip(this)">
+                            Gå tillbaka
+                        </button>
+                        <a href="https://github.com/callefransson/Labb4IndividuelltDatabasProjekt">
+                            <button class="go-to-github">
+                                Gå till github
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="place-holder">
+                <div class="front-place-holder">
+                    <div class="image-container">
+                        <img src="images/labb4bildglitch.jpg" alt="code image">
+                    </div>
+                    <div class="text-and-button">
+                        <h3>Labb 3 anropa databasen</h3>
+                        <button class="show-more" onclick="toggleFlip(this)">
+                            Läs mer
+                        </button>
+                    </div>
+
+                </div>
+                <div class="back-place-holder">
+                    <div class="text-description">
+                        <p class="text-about-project">Labb 3 gick ut på att bygga vidare på labb 2 där vi skulle
+                            anropa databasen med antingen EF eller ADO.NET och skapa en navigation i systemet med olika
+                            funktioner som var krav för uppgiften.
+                        </p>
+                    </div>
+                    <div class="button-container-project">
+                        <button class="go-back" onclick="toggleFlip(this)">
+                            Gå tillbaka
+                        </button>
+                        <a href="https://github.com/callefransson/Labb3AnropaDatabasenTest">
+                            <button class="go-to-github">
+                                Gå till github
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="place-holder">
+                <div class="front-place-holder">
+                    <div class="image-container">
+                        <img src="images/labb4bildglitch.jpg" alt="code image">
+                    </div>
+                    <div class="text-and-button">
+                        <h3>Labb 2 ER-moddelering</h3>
+                        <button class="show-more" onclick="toggleFlip(this)">
+                            Läs mer
+                        </button>
+                    </div>
+
+                </div>
+                <div class="back-place-holder">
+                    <div class="text-description">
+                        <p class="text-about-project">Labb 2 gick ut på att skapa en ER-modell för databsen.
+                            Där vi sedan skulle bygga upp den databasen som vi hade skapat med hjälp av ER-modellen.
+                            Sedan skapa SQL-frågor som hämtade data ur databasen.<br><br> Denna uppgift finns inte på
+                            Github
+                        </p>
+                    </div>
+                    <div class="button-container-project">
+                        <button class="go-back" onclick="toggleFlip(this)">
+                            Gå tillbaka
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="place-holder">
+                <div class="front-place-holder">
+                    <div class="image-container">
+                        <img src="images/labb4bildglitch.jpg" alt="code image">
+                    </div>
+                    <div class="text-and-button">
+                        <h3>Labb 1 Skapa databas</h3>
+                        <button class="show-more" onclick="toggleFlip(this)">
+                            Läs mer
+                        </button>
+                    </div>
+                </div>
+                <div class="back-place-holder">
+                    <div class="text-description">
+                        <p class="text-about-project">Detta var vårat första projekt i databas kursen.
+                            Där vi skulle skapa en databas i SSMS och sedan hämta data ur databasen
+                            med hjälp av SQL-frågor.<br><br> Denna uppgift finns inte på Github
+                        </p>
+                    </div>
+                    <div class="button-container-project">
+                        <button class="go-back" onclick="toggleFlip(this)">
+                            Gå tillbaka
+                        </button>
+                        <a href="https://github.com/callefransson/callestheme">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="place-holder">
+                <div class="front-place-holder">
+                    <div class="image-container">
+                        <img src="images/labb4bildglitch.jpg" alt="code image">
+                    </div>
+                    <div class="text-and-button">
+                        <h3>Slutprojekt i OOP</h3>
+                        <button class="show-more" onclick="toggleFlip(this)">
+                            Läs mer
+                        </button>
+                    </div>
+
+                </div>
+                <div class="back-place-holder">
+                    <div class="text-description">
+                        <p class="text-about-project">
+                            Detta var slutprojektet i OOP-kursen där vi var i grupp och programmerade ett banksystem.
+                            Detta projektet gick ut på att utifrån en backlogg skapa ett banksystem som skulle
+                            uppfylla kraven som fanns i backloggen. Där vi skulle med olika klasser och metoder
+                            programmera ett system
+                            som i slutändan skulle bli ett fungerande program.
+                        </p>
+                    </div>
+                    <div class="button-container-project">
+                        <button class="go-back" onclick="toggleFlip(this)">
+                            Gå tillbaka
+                        </button>
+                        <a href="https://github.com/callefransson/BankSystem">
+                            <button class="go-to-github">
+                                Gå till github
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="place-holder">
+                <div class="front-place-holder">
+                    <div class="image-container">
+                        <img src="images/labb4bildglitch.jpg" alt="code image">
+                    </div>
+                    <div class="text-and-button">
+                        <h3>Labb 8 OOP Generic collections</h3>
+                        <button class="show-more" onclick="toggleFlip(this)">
+                            Läs mer
+                        </button>
+                    </div>
+
+                </div>
+                <div class="back-place-holder">
+                    <div class="text-description">
+                        <p class="text-about-project">
+                            Denna labb handlade om att man skulle använda två vanliga generiska typer inom C#.
+                            Där man skulle skapa en klass och objekt utifrån den klassen som skulle hanteras med Stack
+                            och List. Med Stack skulle man använda metoder som Push,Pop och Peek för att lägga till och
+                            hämta
+                            olika objekt. Sedan skapa en List där man skulle använda metoder som Contains, Find och
+                            FindAll
+                            för att se om ett visst obejt fanns i listan, för att skriva ut första obejktet samt hämta
+                            alla obejekt
+                            i listan med specifika egenskaper.
+                        </p>
+                    </div>
+                    <div class="button-container-project">
+                        <button class="go-back" onclick="toggleFlip(this)">
+                            Gå tillbaka
+                        </button>
+                        <a href="https://github.com/callefransson/Labb8---OOP-Generic-Collections">
+                            <button class="go-to-github">
+                                Gå till github
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="place-holder">
+                <div class="front-place-holder">
+                    <div class="image-container">
+                        <img src="images/labb4bildglitch.jpg" alt="code image">
+                    </div>
+                    <div class="text-and-button">
+                        <h3>Labb 7 OOP Polymorphism </h3>
+                        <button class="show-more" onclick="toggleFlip(this)">
+                            Läs mer
+                        </button>
+                    </div>
+
+                </div>
+                <div class="back-place-holder">
+                    <div class="text-description">
+                        <p class="text-about-project">Denna labb gick ut på att använda polymorphism inom OOP.
+                            Där syftet var att tänka ut en struktur för polymorphism. Där vi skulle skapa basklass
+                            och sedan subklasser som ärver från basklassen och alla dessa subklasser ska ha en metod som
+                            overridas för varje klass med unika metoder.
+                        </p>
+                    </div>
+                    <div class="button-container-project">
+                        <button class="go-back" onclick="toggleFlip(this)">
+                            Gå tillbaka
+                        </button>
+                        <a href="https://github.com/callefransson/Labb7-OOP-Polymorphism-Carl-Fransson">
+                            <button class="go-to-github">
+                                Gå till github
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="place-holder">
+                <div class="front-place-holder">
+                    <div class="image-container">
+                        <img src="images/labb4bildglitch.jpg" alt="code image">
+                    </div>
+                    <div class="text-and-button">
+                        <h3>Labb 6 OOP Arv </h3>
+                        <button class="show-more" onclick="toggleFlip(this)">
+                            Läs mer
+                        </button>
+                    </div>
+
+                </div>
+                <div class="back-place-holder">
+                    <div class="text-description">
+                        <p class="text-about-project">Denna labb övade vi på att använda arv inom objektorientering.
+                            Uppgiften gick ut på att tänka ut en struktur för arv men också delvis om att implementera
+                            den i kod. Där vi skulle ha en basklass med olika egenskaper och metoder.
+                            Sedan skapa olika klasser som sedan skulle ärva från basklassen. Dessa klasser skulle
+                            ha unika egenskaper samt metoder.
+                        </p>
+                    </div>
+                    <div class="button-container-project">
+                        <button class="go-back" onclick="toggleFlip(this)">
+                            Gå tillbaka
+                        </button>
+                        <a href="https://github.com/callefransson/Labb6-OOP-Arv">
+                            <button class="go-to-github">
+                                Gå till github
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="place-holder">
+                <div class="front-place-holder">
+                    <div class="image-container">
+                        <img src="images/labb4bildglitch.jpg" alt="code image">
+                    </div>
+                    <div class="text-and-button">
+                        <h3>Labb 5 Grunderna i OOP </h3>
+                        <button class="show-more" onclick="toggleFlip(this)">
+                            Läs mer
+                        </button>
+                    </div>
+
+                </div>
+                <div class="back-place-holder">
+                    <div class="text-description">
+                        <p class="text-about-project">Detta var den första uppgiften i OOP där vi skulle lära oss att
+                            arbeta objekt orienterat. Detta var en simpel uppgift där vi skulle skapa en klass med en
+                            konstruktor
+                            och en metod som räknade ut arean på en cirkel.
+                        </p>
+                    </div>
+                    <div class="button-container-project">
+                        <button class="go-back" onclick="toggleFlip(this)">
+                            Gå tillbaka
+                        </button>
+                        <a href="https://github.com/callefransson/Labb5">
+                            <button class="go-to-github">
+                                Gå till github
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="place-holder">
+                <div class="front-place-holder">
+                    <div class="image-container">
+                        <img src="images/labb4bildglitch.jpg" alt="code image">
+                    </div>
+                    <div class="text-and-button">
+                        <h3>Labb 4 Felsökning </h3>
+                        <button class="show-more" onclick="toggleFlip(this)">
+                            Läs mer
+                        </button>
+                    </div>
+
+                </div>
+                <div class="back-place-holder">
+                    <div class="text-description">
+                        <p class="text-about-project">Detta projekt gick ut på att felsöka kod i ett program.
+                            Där vi skulle hitta vad som var felet i dessa cases, korrigera felen samt ge en förklaring
+                            vad som var felet för varje case. Syftet med uppgiften var att lära oss att kunna felsöka
+                            kod på korrekt sätt.<br><br>Denna uppgift finns inte på Github
+                        </p>
+                    </div>
+                    <div class="button-container-project">
+                        <button class="go-back" onclick="toggleFlip(this)">
+                            Gå tillbaka
+                        </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="place-holder">
+                <div class="front-place-holder">
+                    <div class="image-container">
+                        <img src="images/labb4bildglitch.jpg" alt="code image">
+                    </div>
+                    <div class="text-and-button">
+                        <h3>Labb 3 Gissa numret</h3>
+                        <button class="show-more" onclick="toggleFlip(this)">
+                            Läs mer
+                        </button>
+                    </div>
+
+                </div>
+                <div class="back-place-holder">
+                    <div class="text-description">
+                        <p class="text-about-project">Labb 3 gick ut på att skapa ett spel där användaren ska försöka
+                            gissa rätt på ett hemligt nummer. Där man skulle använda if satser om användaren gissa för
+                            högt eller för lågt. När användaren gissade rätt inom 5 försök så vann användaren.
+                            Man kunde även välja olika svårhetsgrader samt om användaren vela spela igen så startade
+                            spelet om.
+                        </p>
+                    </div>
+                    <div class="button-container-project">
+                        <button class="go-back" onclick="toggleFlip(this)">
+                            Gå tillbaka
+                        </button>
+                        <a href="https://github.com/callefransson/NumbersGame">
+                            <button class="go-to-github">
+                                Gå till github
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="place-holder">
+                <div class="front-place-holder">
+                    <div class="image-container">
+                        <img src="images/labb4bildglitch.jpg" alt="code image">
+                    </div>
+                    <div class="text-and-button">
+                        <h3>Labb 2 Schackbrädet</h3>
+                        <button class="show-more" onclick="toggleFlip(this)">
+                            Läs mer
+                        </button>
+                    </div>
+
+                </div>
+                <div class="back-place-holder">
+                    <div class="text-description">
+                        <p class="text-about-project">Denna labb gick ut på att skapa ett schackbräde där användaren
+                            fick välja
+                            själv hur många kolumner och rader hen vela ha i spelet, samt vilka symboler som skulle
+                            representera dessa rader och kolumner. Sedan fick användaren välja vilken plats pjäsen
+                            skulle placeras i spelet.
+                            Sedan skulle detta schackbräde skrivas ut och pjäsen skulle vara på det stället som
+                            efterfrågades av användaren.
+                        </p>
+                    </div>
+                    <div class="button-container-project">
+                        <button class="go-back" onclick="toggleFlip(this)">
+                            Gå tillbaka
+                        </button>
+                        <a href="https://github.com/callefransson/Chessboard">
+                            <button class="go-to-github">
+                                Gå till github
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="place-holder">
+                <div class="front-place-holder">
+                    <div class="image-container">
+                        <img src="images/labb4bildglitch.jpg" alt="code image">
+                    </div>
+                    <div class="text-and-button">
+                        <h3>Labb 1 Mitt första program</h3>
+                        <button class="show-more" onclick="toggleFlip(this)">
+                            Läs mer
+                        </button>
+                    </div>
+
+                </div>
+                <div class="back-place-holder">
+                    <div class="text-description">
+                        <p class="text-about-project">Detta var första uppfiten i utbildningen, där man skulle
+                            skapa olika variablar, skapa olika if satser, ta emot en inmatad text sedan skriva ut den
+                            texten som
+                            användaren skrev. Skapa en loop för att skriva ut noll upp till ett nummer som användaren
+                            skrev in.
+                        </p>
+                    </div>
+                    <div class="button-container-project">
+                        <button class="go-back" onclick="toggleFlip(this)">
+                            Gå tillbaka
+                        </button>
+                        <a href="https://github.com/callefransson/MyFirstProgram">
+                            <button class="go-to-github">
+                                Gå till github
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="project-header-section">
+            <h1>Projekt utanför utbildningen</h1>
+        </section>
+        <section class="projects">
+            <div class="place-holder">
+                <div class="front-place-holder">
+                    <div class="image-container">
+                        <img src="images/labb4bildglitch.jpg" alt="code image">
+                    </div>
+                    <div class="text-and-button">
+                        <h3>Hemsida i wordpress</h3>
+                        <button class="show-more" onclick="toggleFlip(this)">
+                            Läs mer
+                        </button>
+                    </div>
+                </div>
+                <div class="back-place-holder">
+                    <div class="text-description">
+                        <p class="text-about-project">Denna webbplats är ett projekt som jag initierade under min
+                            tidigare anställning. Jag skapade ett anpassat tema i WordPress där jag integrerade PHP,
+                            HTML, CSS och JavaScript. Trots att webbplatsen ännu inte är helt färdigställd, ägnar jag nu
+                            min fritid åt att fortsätta koda för att förbättra mina kunskaper och slutföra projektet.
+                        </p>
+                    </div>
+                    <div class="button-container-project">
+                        <button class="go-back" onclick="toggleFlip(this)">
+                            Gå tillbaka
+                        </button>
+                        <a href="https://github.com/callefransson/callestheme">
+                            <button class="go-to-github">
+                                Gå till github
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="place-holder">
+                <div class="front-place-holder">
+                    <div class="image-container">
+                        <img src="images/labb4bildglitch.jpg" alt="code image">
+                    </div>
+                    <div class="text-and-button">
+                        <h3>Hemsida till ett företag</h3>
+                        <button class="show-more" onclick="toggleFlip(this)">
+                            Läs mer
+                        </button>
+                    </div>
+                </div>
+                <div class="back-place-holder">
+                    <div class="text-description">
+                        <p class="text-about-project">
+                            Jag håller på att utveckla ett projekt för min mamma och syster i samband med deras
+                            nyetablerade företag. Webbplatsen kommer att innehålla en inloggningsfunktion samt ett
+                            bokningssystem som möjliggör för kunder att göra bokningar för fotvård. Dessutom kommer
+                            admin att ha tillgång till en logg över alla kunder och deras bokningar. Jag bygger denna
+                            webbplats med hjälp av ASP.NET och SSMS för att lagra och hantera
+                            kundinformation i en databas.
+                        </p>
+                    </div>
+                    <div class="button-container-project">
+                        <button class="go-back" onclick="toggleFlip(this)">
+                            Gå tillbaka
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="place-holder">
+                <div class="front-place-holder">
+                    <div class="image-container">
+                        <img src="images/labb4bildglitch.jpg" alt="code image">
+                    </div>
+                    <div class="text-and-button">
+                        <h3>ASP.NET Core projekt</h3>
+                        <button class="show-more" onclick="toggleFlip(this)">
+                            Läs mer
+                        </button>
+                    </div>
+
+                </div>
+                <div class="back-place-holder">
+                    <div class="text-description">
+                        <p class="text-about-project">
+                            Detta är ett pågående projekt där jag håller på att utveckla en webbplats med ASP.NET. Målet
+                            med
+                            projektet är att skapa en enkel e-handelsbutik för olika böcker. Besökare på sidan kommer
+                            att kunna bläddra bland produkterna, lägga till varor i en varukorg och slutföra en
+                            beställning. Samtliga transaktioner och produktinformation kommer att lagras i en
+                            databas. Dessutom kommer användare att ha möjlighet att registrera sig och logga in på
+                            webbplatsen
+                        </p>
+                    </div>
+                    <div class="button-container-project">
+                        <button class="go-back" onclick="toggleFlip(this)">
+                            Gå tillbaka
+                        </button>
+                        <a href="https://github.com/callefransson/FullStackWeb_MVC">
+                            <button class="go-to-github">
+                                Gå till github
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="move-to-top-container" id="top-button">
+        <a href="#top-section"><img src="/images/movetotop.png" alt="arrow icon"></a>
+    </div>
+    <footer>
+        <div class="footer-container" id="footer-link">
+            <a href="#main" class="skip">Gå till huvudinnehåll</a>
+            <ul class="social-icon">
+                <li class="social-link"><a href="https://www.facebook.com/calle.franzzon"><img src="images/facebook.png"
+                            alt="Facebook icon"></a>
+                </li>
+                <li class="social-link"><a href="https://www.linkedin.com/in/carl-fransson-5b6769296/"><img
+                            src="images/linkedinLogo.png" alt="Twitter icon"></a></li>
+                <li class="social-link"><a href="https://www.instagram.com/calle_fransson/"><img
+                            src="images/instagram.png" alt="Instagram icon"></a>
+                </li>
+                <li class="social-link"><a href="mailto:calle-fransson@hotmail.com"><img src="images/mail.png"
+                            alt="Email icon"></a></li>
+                <li class="social-link"><a href="https://github.com/callefransson"><img src="images/github-logo.png"
+                            alt=" Github icon"></a>
+                </li>
+            </ul>
+            <ul class="footer-ul">
+                <li><a href="index.html">Hem</a></li>
+                <li><a href="about.html">Om mig</a></li>
+                <li><a href="projects.html" class="current">Mina projekt</a></li>
+                <li><a href="contact.html">Kontakta mig</a></li>
+                <li><a href="webguidelines.html">Webb riktlinjer</a></li>
+                <li><a href="cv.html">CV</a></li>
+            </ul>
+
+        </div>
+        <p>&copy;2024 Carl Fransson .NET23 | All Rights Reserved</p>
+    </footer>
+    <script src="/js/script.js"></script>
+</body>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="/images/android-chrome-192x192.png">
+  <title>My portfolio</title>
+</head>
+
+<body>
+  <header id="header">
+    <nav class="navbar">
+      <a href="index.html">Carl Fransson</a>
+      <button class="navbar-toggle" id="navbar-toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <a href="#main" class="skip">Gå till huvudinnehåll</a>
+      <ul class="navbar-menu" id="navbar-menu">
+        <li><a href="index.html" class="current">Hem</a></li>
+        <li><a href="about.html">Om mig</a></li>
+        <li><a href="projects.html">Mina projekt</a></li>
+        <li><a href="contact.html">Kontakta mig</a></li>
+        <li><a href="cv.html">CV</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="first-section-bg" id="top-section">
+      <div class="wrap-content">
+        <h1 class="title">Carl Fransson</h1>
+        <p>Systemutvecklare</p>
+        <div class="button-container">
+          <a href="projects.html"><button class="button">Mina projekt</button></a>
+          <a href="contact.html"><button class="button">Nå mig</button></a>
+        </div>
+      </div>
+    </section>
+    <section class="latest-projects">
+      <h1>Mina senaste projekt</h1>
+    </section>
+    <section class="latest-projects-section">
+      <div class="latest-projects-inner">
+        <div class="latest-projects-each-section">
+          <img src="images/labb4bildglitch.jpg" alt="code image">
+          <div class="projects-text-btn-container">
+            <h2>Slutprojekt Databaser</h2>
+            <button class="learn-more" id="open-button1">Läs mer</button>
+          </div>
+          <dialog class="modal" id="modal1">
+            <div class="modal-container">
+              <h2>Slutprojekt Databaser</h2>
+              <p>Detta var slutprojektet i databas kursen där vi hade som uppgift att
+                skapa en fiktiv skola och att skapa ett fungerande system med databaser.
+                Uppgiten byggde vidare på labb 2 och labb 3 som vi hade i databas kursen.</p>
+              <button class="close-button1" id="close-button1">Stäng</button>
+            </div>
+          </dialog>
+        </div>
+        <div class="latest-projects-each-section">
+          <img src="images/labb4bildglitch.jpg" alt="code image">
+          <div class="projects-text-btn-container">
+            <h2>Labb 3 anropa databasen</h2>
+            <button class="learn-more" id="open-button2">Läs mer</button>
+          </div>
+          <dialog class="modal" id="modal2">
+            <div class="modal-container">
+              <h2>Labb 3 anropa databasen</h2>
+              <p>Labb 3 gick ut på att bygga vidare på labb 2 där vi skulle
+                anropa databasen med antingen EF eller ADO.NET och skapa en navigation i systemet med olika
+                funktioner som var krav för uppgiften.</p>
+              <button class="close-button2" id="close-button2">Stäng</button>
+            </div>
+          </dialog>
+        </div>
+        <div class="latest-projects-each-section">
+          <img src="images/labb4bildglitch.jpg" alt="code image">
+          <div class="projects-text-btn-container">
+            <h2>Labb 2 ER-moddelering</h2>
+            <button class="learn-more" id="open-button3">Läs mer</button>
+          </div>
+          <dialog class="modal" id="modal3">
+            <div class="modal-container">
+              <h2>Labb 2 ER-moddelering</h2>
+              <p>Labb 2 gick ut på att skapa en ER-modell för databsen.
+                Där vi sedan skulle bygga upp den databasen som vi hade skapat med hjälp av ER-modellen.
+                Sedan skapa SQL-frågor som hämtade data ur databasen.</p>
+              <button class="close-button3" id="close-button3">Stäng</button>
+            </div>
+          </dialog>
+        </div>
+      </div>
+    </section>
+    <section class="my-skills-section" id="skills">
+      <div class="my-skills">
+        <img src="images/dev.png" alt="Computer image">
+        <h2>Mina kunskaper</h2>
+      </div>
+      <div class="image-dev">
+        <img loading="lazy" src="images/html.png" alt="html image">
+        <img loading="lazy" src="images/css.png" alt="css image">
+        <img loading="lazy" src="images/bootstrap-icon.png" alt="Bootstrap image">
+        <img loading="lazy" src="images/js.png" alt="js image">
+        <img loading="lazy" src="images/React-icon.svg.png" alt="React image">
+        <img loading="lazy" src="images/wp.png" alt="wordpress image">
+        <img loading="lazy" src="images/csharp.png" alt="c# image">
+        <img loading="lazy" src="images/sql-removebg-preview.png" alt="SQL image">
+      </div>
+    </section>
+  </main>
+  <div class="move-to-top-container" id="top-button">
+    <a href="#top-section"><img src="/images/movetotop.png" alt="arrow icon"></a>
+  </div>
+  <footer>
+    <div class="footer-container" id="footer-link">
+      <a href="#main" class="skip">Gå till huvudinnehåll</a>
+      <ul class="social-icon">
+        <li class="social-link"><a href="https://www.facebook.com/calle.franzzon"><img src="images/facebook.png"
+              alt="Facebook icon"></a>
+        </li>
+        <li class="social-link"><a href="https://www.linkedin.com/in/carl-fransson-5b6769296/"><img
+              src="images/linkedinLogo.png" alt="Twitter icon"></a></li>
+        <li class="social-link"><a href="https://www.instagram.com/calle_fransson/"><img src="images/instagram.png"
+              alt="Instagram icon"></a>
+        </li>
+        <li class="social-link"><a href="mailto:calle-fransson@hotmail.com"><img src="images/mail.png"
+              alt="Email icon"></a></li>
+        <li class="social-link"><a href="https://github.com/callefransson"><img src="images/github-logo.png"
+              alt=" Github icon"></a>
+        </li>
+      </ul>
+      <ul class="footer-ul">
+        <li><a href="index.html" class="current">Hem</a></li>
+        <li><a href="about.html">Om mig</a></li>
+        <li><a href="projects.html">Mina projekt</a></li>
+        <li><a href="contact.html">Kontakta mig</a></li>
+        <li><a href="webguidelines.html">Webb riktlinjer</a></li>
+        <li><a href="cv.html">CV</a></li>
+      </ul>
+
+    </div>
+    <p>&copy;2024 Carl Fransson .NET23 | All Rights Reserved</p>
+  </footer>
+  <script src="/js/script.js"></script>
+</body>
+
+</html>
