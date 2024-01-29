@@ -902,6 +902,8 @@ box-shadow: -9px 6px 10px -1px rgba(0, 0, 0, 1.2);
 
 footer{
   background-color: #040404;
+  position: relative;
+  z-index: 10;
 }
 .footer-container{
   display: flex;
